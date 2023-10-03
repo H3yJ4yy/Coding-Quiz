@@ -23,5 +23,5 @@ startButton.addEventListener("click", startQuiz);
     }class="quizInstructions">
 ```
 
-##Additional Information
+## Additional Information
 this code was done with the help of my tutor as well as worked with the class
