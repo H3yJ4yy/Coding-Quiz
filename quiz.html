@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Coding Game Quiz</title>
+        <link rel="stylesheet" href="./Assets/css/reset.css">
+        <link rel="stylesheet" href="./Assets/css/style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1 class="header">C0d3 Qu1z</h1>
+            <a class="subHeader" href="./highscore.html">High Score</a>
+        </header>
+        <main>
+            <div id="startContainer" class="container">
+                <h2 class="codeQuizTitle">Welcome to the Coding Quiz!</h2>
+                <p class="quizInstructions">
+                    <br>Answer as many questions as possible within the time limit.<br>
+                    <br><br> Rules: <br>
+                    Your score is based on how much time you have left.<br><br>
+                    *Right answers +10 seconds<br> 
+                    *Wrong answers -10 seconds<br> <br> 
+                    Good luck! 😊 .</p>
+                <button id="startBtn" class="btn">Start Quiz</button>
+            </div>
+            <div id="quizContainer" class="container" style="display: none;">
+                <div id="questionContainer" class="container">
+                    <h2 id="questions" class="question"></h2>
+                    <ul id="choices" class="choices"></ul>
+                </div>
+                <div id="timerContainer" class="container">
+                    <p>Time Left: <span id="timer" class="timer">100</span></p>
+                </div>
+            </div>
+            <div id="gameOver" class="container" style="display: none;">
+                <h2 class="timeUp">Times Up!</h2>
+                <p>Final score: <span id="finalScore"></span></p>
+                <label class="lable" for="initials">Enter your initials:</label>
+                <input type="text" id="initials" placeholder="Your initials">
+                <button id="saveScoreBtn" class="btn">Save Score</button>
+            </div>
+
+        </main>
+        
+        <script src="Assets/js/questions.js"></script>
+        <script src="Assets/js/logic.js"></script>
+    </body>
+</html>
